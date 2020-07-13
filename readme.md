@@ -6,4 +6,6 @@ Simply run
 make run
 ```
 
-to run simple tests.
+for simple tests.
+
+Update the [code](https://github.com/cloudymoma/re2test/blob/master/re2test.cpp) accordingly for the test you want to run. Consult the APIs [here](https://github.com/google/re2/wiki/CplusplusAPI)
