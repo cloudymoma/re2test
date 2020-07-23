@@ -27,6 +27,14 @@ int main(int argc, char* argv[]) {
     cout << RE2::PartialMatch("abc", "abc$") << endl;
     cout << RE2::PartialMatch("abcd", "abc") << endl;
     cout << RE2::PartialMatch("abcd", "abc$") << endl;
+    cout << RE2::PartialMatch("ab/cd", "ab/cd") << endl;
+    cout << RE2::PartialMatch("ab/cd", "ab\/cd") << endl;
+    cout << RE2::PartialMatch("ab.cd", "ab.cd") << endl;
+    cout << RE2::PartialMatch("ab.cd", "ab\.cd") << endl;
+    cout << RE2::PartialMatch("abc.txt", ".*\.(jpg|png)") << endl;
+    cout << RE2::PartialMatch("abc.txt", ".*\\.(jpg|png)") << endl;
+    cout << RE2::PartialMatch("abc.png", ".*\.(jpg|png)") << endl;
+    cout << RE2::PartialMatch("abc.png", ".*\\.(jpg|png)") << endl;
 
     return 0;
 }
