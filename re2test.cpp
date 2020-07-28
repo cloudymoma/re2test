@@ -41,7 +41,8 @@ int main(int argc, char* argv[]) {
 
     //char* pattern = "^live_g.*";
     //char* pattern = "^live_g/.*";
-    char* pattern = "^live_g\/.*";
+    char* pattern = "^live_g.*\.mp4$";
+    //char* pattern = "^live_g/.*\.mp4$";
     cout << RE2::FullMatch("live_g/abc.mp4", pattern) << endl;
     cout << RE2::FullMatch("live_gabc.mp4", pattern) << endl;
     cout << RE2::FullMatch("vod/live_g/abc.mp4", pattern) << endl;
